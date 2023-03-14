@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh auto;
+    background-color: #fff;
+    margin: 0 5rem;
+}
+
+.container>a {
+    text-decoration: none;
+}
+
+.container>a>h1 {
+    text-align: center;
+    color: black;
+    padding-top: 2rem;
+    font-weight: 500;
+}
+
+.container>p {
+    text-align: center;
+    color: #c7c7c7;
+    margin-bottom: 2rem;
+}
+
+.auto-type {
+    text-align: center;
+    color: #c7c7c7;
+
+}
+
+
+.container>.btn {
+    margin: 0 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container>.btn>a>button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0.5rem 1rem;
+    border-radius: 3rem;
+    border: 2px solid rgb(0, 132, 255);
+    color: rgb(0, 132, 255);
+    transition: 0.3s;
+}
+
+.container>.btn>a>button:hover {
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+}
+
+.container>.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container>.books>.book-grid>a>img {
+    max-width: 330px;
+    height: 480px;
+    margin: 2rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container>.books>.book-grid>a>img:hover {
+    transform: scale(1.1);
+}
+
+/* scroll-To-Top */
+#btnScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #c62739;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop>i {
+    font-size: 1.3rem;
+}
+
+/* footer */
+.footer {
+    color: gray;
+    margin: 2rem 0;
+}
+
+.footer>p>a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #c62739;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+
+    .container> a > h1 {
+        font-size: 1.6rem;
+    }
+
+    .container>.btn {
+        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .container>.btn>a>button {
+        padding: 5px 18px;
+        margin: 0;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .container>.books {
+        display: block;
+    }
+
+    .container>.books>.book-grid>img {
+        width: 230px;
+        margin: 0.5rem 2rem;
+    }
+
+    .container>.books>.book-grid>a>img:hover {
+        transform: none;
+    }
+}

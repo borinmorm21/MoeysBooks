@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/94767edb87.js" crossorigin="anonymous"></script>
+    <title>Textbook MoYES - Grade 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- website title -->
+        <a href="/index.html">
+            <h1>Textbook MoEYS Grade 5</h1>
+        </a>
+        <p>Tap on text above to go to home page</p>
+
+        <!-- buttons -->
+        <div class="btn">
+            <a href="/pages/G1/index.html"><button class="grade1">Grade 1</button></a>
+            <a href="/pages/G2/index.html"><button class="grade2">Grade 2</button></a>
+            <a href="/pages/G3/index.html"><button class="grade3">Grade 3</button></a>
+            <a href="/pages/G4/index.html"><button class="grade4">Grade 4</button></a>
+            <a href="/pages/G5/index.html"><button class="grade5">Grade 5</button></a>
+            <a href="/pages/G6/index.html"><button class="grade6">Grade 6</button></a>
+            <a href="/pages/G7/index.html"><button class="grade7">Grade 7</button></a>
+            <a href="/pages/G8/index.html"><button class="grade8">Grade 8</button></a>
+            <a href="/pages/G9/index.html"><button class="grade9">Grade 9</button></a>
+            <a href="/pages/G10/index.html"><button class="grade10">Grade 10</button></a>
+            <a href="/pages/G11/index.html"><button class="grade11">Grade 11</button></a>
+            <a href="/pages/G12/index.html"><button class="grade12">Grade 12</button></a>
+        </div>
+
+        <!-- cards -->
+        <div class="books">
+            <div class="book-grid">
+                <a href="https://drive.google.com/file/d/1u-Mk3lAT8mAMcS52F5HWdttogKz6AKRo/view?usp=sharing"
+                    target="_blank"><img src="/images/G5/english5.jpg"></a>
+            </div>
+
+            <div class="book-grid">
+                <a href="https://drive.google.com/file/d/1-2Dq5rqknYdjC9EQDokiTi2XFqaB9NRx/view?usp=sharing"
+                    target="_blank"><img src="/images/G5/khmer5.jpg"></a>
+            </div>
+
+            <div class="book-grid">
+                <a href="https://drive.google.com/file/d/1-2Dq5rqknYdjC9EQDokiTi2XFqaB9NRx/view?usp=sharing"
+                    target="_blank"><img src="/images/G5/math5.jpg"></a>
+            </div>
+
+            <div class="book-grid">
+                <a href="https://drive.google.com/file/d/1-2Dq5rqknYdjC9EQDokiTi2XFqaB9NRx/view?usp=sharing"
+                    target="_blank"><img src="/images/G5/sc5.jpg"></a>
+            </div>
+
+            <div class="book-grid">
+                <a href="https://drive.google.com/file/d/1-2Dq5rqknYdjC9EQDokiTi2XFqaB9NRx/view?usp=sharing"
+                    target="_blank"><img src="/images/G5/moral5.jpg"></a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <p>Contact <a href="https://t.me/Borinmorm_real">developer</a></p>
+        </div>
+    </div>
+
+    <!-- scroll-to-top -->
+    <button id="btnScrollToTop" onclick="topFunction()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        var mybutton = document.getElementById("btnScrollToTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
